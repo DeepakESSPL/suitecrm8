@@ -1,0 +1,5 @@
+[2025-08-26 10:35:29] app.ERROR: An error occurred while checking the Database Host Connection SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for suitecrm8 failed: No such host is known.  [] []
+[2025-08-26 10:36:15] app.ERROR: An error occurred while checking the Database Host Connection SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for suitecrm8 failed: No such host is known.  [] []
+[2025-08-26 10:36:41] app.ERROR: An error occurred while checking the Database Host Connection SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for suitecrm8 failed: No such host is known.  [] []
+[2025-08-26 10:37:18] app.ERROR: An error occurred while checking the Database Host Connection SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) [] []
+[2025-08-26 10:37:52] app.ERROR: An error occurred while checking the Database Host Connection SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) [] []

@@ -1,0 +1,6 @@
+Tue Aug 26 2025 at 10:41:25 [35432][1][FATAL] Email address save error
+Tue Sep 2 2025 at 11:49:26 [21364][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl - styleChecked is not set
+Tue Sep 2 2025 at 11:49:29 [14976][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl - styleChecked is not set
+Tue Sep 2 2025 at 11:49:53 [14976][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl - styleChecked is not set
+Tue Sep 2 2025 at 11:52:10 [21364][1][FATAL] Mysqli_query failed.
+Tue Sep 2 2025 at 11:52:10 [21364][1][FATAL]  Query Failed: SELECT date_modified FROM outbound_email WHERE id='62300d35-1057-432d-11f8-68ad8ecb32c6' AND modified_user_id != '1' AND (modified_user_id != '' OR date_modified > ''): MySQL error 1525: Incorrect DATETIME value: ''
