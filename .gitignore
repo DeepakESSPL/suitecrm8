@@ -1,0 +1,123 @@
+# ===========================================
+# SuiteCRM 8 .gitignore
+# ===========================================
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ===========================================
+# Composer (PHP dependencies)
+# ===========================================
+/vendor/
+composer.lock
+
+# ===========================================
+# Symfony (SuiteCRM 8 backend)
+# ===========================================
+/var/
+!/var/.htaccess
+/public/bundles/
+/config/jwt/*.pem
+/.env.local
+/.env.local.php
+/.env.test.local
+/.env.dev.local
+/.env.prod.local
+/.phpunit.result.cache
+
+# ===========================================
+# Node / Angular (SuiteCRM 8 frontend)
+# ===========================================
+/public/build/
+/public/dist/
+/node_modules/
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+
+# ===========================================
+# Logs and cache
+# ===========================================
+/logs/
+/suitecrm.log
+*.log
+
+# ===========================================
+# Uploads / user-generated files
+# ===========================================
+/public/upload/
+/public/uploads/
+/public/cache/
+/public/tmp/
+/tmp/
+/cache/
+
+# ===========================================
+# Other SuiteCRM specific ignores
+# ===========================================
+/extensions/
+/custom/Extension/modules/*/Ext/Language/en_us.lang.ext.php
+/custom/Extension/modules/*/Ext/Vardefs/vardefs.ext.php
+/custom/Extension/modules/*/Ext/Layoutdefs/layoutdefs.ext.php
+/custom/Extension/modules/*/Ext/LogicHooks/logichooks.ext.php
+/public/legacy/cache/
+public/legacy/upload/
+public/legacy/modules/UpgradeWizard/
+public/legacy/config_override.php
+public/legacy/suitecrm.log
+public/legacy/config_si.php
+public/legacy/install.log
+public/legacy/custom/blowfish/
+/legacy/logs/
+
+# ===========================================
+# PHPUnit / testing
+# ===========================================
+/phpunit.xml
+/phpunit.xml.dist
+/tests/coverage/
+/coverage/
+
+# ===========================================
+# Local / dev files
+# ===========================================
+.env.local
+.env.*
+!.env
+/.docker/
+/docker-compose.override.yml
+.idea/
+*.local.yml
+
+# ===========================================
+# Backup files
+# ===========================================
+*.tar
+*.tar.gz
+*.zip
+*.gz
+*.sql
+*.bak
+*.old
+*.orig
+
+# ===========================================
+# Build artifacts
+# ===========================================
+/build/
+/dist/
+/coverage/
