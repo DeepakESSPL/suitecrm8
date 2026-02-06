@@ -1,0 +1,29 @@
+<?php
+/**
+ * Production Config Override Template
+ * 
+ * Deploy this file to production server as config_override.php
+ * Update the values below with production-specific settings
+ */
+
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
+
+// Production Database Configuration
+$sugar_config['dbconfig']['db_host_name'] = 'localhost';
+$sugar_config['dbconfig']['db_user_name'] = 'crm';
+$sugar_config['dbconfig']['db_password'] = 'Crm@2025$!';
+$sugar_config['dbconfig']['db_name'] = 'crm_suitecrm';
+$sugar_config['dbconfig']['db_type'] = 'mysql';
+$sugar_config['dbconfig']['db_port'] = '';
+$sugar_config['dbconfig']['db_manager'] = 'MysqliManager';
+
+// Production Site URL
+$sugar_config['site_url'] = 'https://your-production-domain.com';
+
+// Production-specific settings
+$sugar_config['developer_mode'] = false;
+$sugar_config['log_level'] = 'fatal';
+$sugar_config['display_errors'] = false;
+$sugar_config['verify_client_ip'] = true;
