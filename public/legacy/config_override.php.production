@@ -13,7 +13,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
 // Production Database Configuration
 $sugar_config['dbconfig']['db_host_name'] = '127.0.0.1';
 $sugar_config['dbconfig']['db_user_name'] = 'trcrm';
-$sugar_config['dbconfig']['db_password'] = 'TRcrm@2025$£!';
+$sugar_config['dbconfig']['db_password'] = 'UWr7VB1Hj47ptu8A3U0xpoEcY';
 $sugar_config['dbconfig']['db_name'] = 'trcrm';
 $sugar_config['dbconfig']['db_type'] = 'mysql';
 $sugar_config['dbconfig']['db_port'] = '';
