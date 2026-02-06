@@ -117,11 +117,11 @@ $sugar_config = array (
   'datef' => 'm/d/Y',
   'dbconfig' => 
   array (
-    'db_host_name' => 'localhost',
+    'db_host_name' => '127.0.0.1',
     'db_host_instance' => '',
-    'db_user_name' => 'deepak',
-    'db_password' => 'deepak',
-    'db_name' => 'suitecrm',
+    'db_user_name' => 'crm',
+    'db_password' => 'Crm@2025$!',
+    'db_name' => 'crm_suitecrm',
     'db_type' => 'mysql',
     'db_port' => '3306',
     'db_manager' => 'MysqliManager',

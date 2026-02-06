@@ -8,15 +8,15 @@ return [PHP_INT_MAX, [
             'sort_modules_by_name' => '',
             'navigation_paradigm' => 'm',
             'swap_shortcuts' => false,
-            'subpanel_tabs' => true,
+            'subpanel_tabs' => 'on',
             'subpanel_pagination_type' => 'pagination',
             'listview_pagination_type' => 'pagination',
             'count_collapsed_subpanels' => '',
             'user_theme' => 'suite8',
             'module_favicon' => false,
             'no_opps' => 'off',
-            'reminder_time' => 1800,
-            'email_reminder_time' => 3600,
+            'reminder_time' => '1800',
+            'email_reminder_time' => '3600',
             'reminder_checked' => '1',
             'email_reminder_checked' => '1',
             'timezone' => 'Europe/London',
@@ -31,7 +31,7 @@ return [PHP_INT_MAX, [
             'default_currency_significant_digits' => '2',
             'num_grp_sep' => ',',
             'dec_sep' => '.',
-            'fdow' => null,
+            'fdow' => '0',
             'date_format' => 'yyyy-MM-dd',
             'time_format' => 'HH:mm',
             'mail_fromname' => null,
@@ -50,13 +50,13 @@ return [PHP_INT_MAX, [
             'signature_default' => null,
             'signature_prepend' => null,
             'email_link_type' => 'sugar',
-            'editor_type' => null,
+            'editor_type' => 'mozaik',
             'email_show_counts' => 0,
             'email_editor_option' => null,
             'default_email_charset' => 'UTF-8',
             'calendar_publish_key' => '12a4b783-3fb7-0ef1-4f8f-68ad8e220f6a',
             'record_modal_pagination_type' => 'pagination',
-            'subtheme' => null,
+            'subtheme' => 'Dawn',
             'syncGCal' => null,
             'listview_max_height' => 0,
             'list_max_entries_per_page' => 20,
@@ -114,22 +114,12 @@ return [PHP_INT_MAX, [
                         'current' => 0,
                         'previous' => -1,
                         'next' => -1,
-                        'last' => 0,
-                        'total' => 3,
-                        'pageFirst' => 1,
-                        'pageLast' => 3,
+                        'last' => -20,
+                        'total' => 0,
+                        'pageFirst' => 0,
+                        'pageLast' => 0,
                     ],
-                    'recordIds' => [
-                        [
-                            'id' => '1',
-                        ],
-                        [
-                            'id' => '86882b57-50f9-b290-fa29-68b6db81108e',
-                        ],
-                        [
-                            'id' => '983cd3b4-a296-467d-7475-68b6dbb67cd2',
-                        ],
-                    ],
+                    'recordIds' => [],
                 ],
                 'leads-recordview-show-sidebar-widgets' => false,
                 'accounts-listview-show-sidebar-widgets' => true,
@@ -164,13 +154,13 @@ return [PHP_INT_MAX, [
                     ],
                     'recordIds' => [
                         [
-                            'id' => '375b0ada-5155-81ac-2a4e-68b6dc760d9c',
+                            'id' => '1',
                         ],
                         [
-                            'id' => '4ad13a76-3d89-d3bd-9f55-68b6dcb3fdb5',
+                            'id' => '86882b57-50f9-b290-fa29-68b6db81108e',
                         ],
                         [
-                            'id' => 'a23dff51-b2b4-0267-290a-68b6dc168e9d',
+                            'id' => '983cd3b4-a296-467d-7475-68b6dbb67cd2',
                         ],
                     ],
                 ],
@@ -192,9 +182,209 @@ return [PHP_INT_MAX, [
                 ],
                 'contacts-listview-current-sort' => [
                     'orderBy' => '',
-                    'sortOrder' => 'NONE',
+                    'sortOrder' => 'DESC',
                 ],
                 'contacts-recordview-current-record-pagination' => [
+                    'pagination' => [
+                        'pageSize' => 5,
+                        'current' => 0,
+                        'previous' => 0,
+                        'next' => 5,
+                        'last' => 0,
+                        'total' => 0,
+                        'pageFirst' => 0,
+                        'pageLast' => 0,
+                    ],
+                    'recordIds' => [],
+                ],
+                'users-listview-show-sidebar-widgets' => false,
+                'users-listview-current-pagination-type' => 'pagination',
+                'users-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'users-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'users-recordview-current-record-pagination' => [
+                    'pagination' => [
+                        'pageSize' => 20,
+                        'current' => 0,
+                        'previous' => -1,
+                        'next' => -1,
+                        'last' => 0,
+                        'total' => 18,
+                        'pageFirst' => 1,
+                        'pageLast' => 18,
+                    ],
+                    'recordIds' => [
+                        [
+                            'id' => '2e5bbf23-3a82-4d21-badb-68f8df9e5f0e',
+                        ],
+                        [
+                            'id' => '375b0ada-5155-81ac-2a4e-68b6dc760d9c',
+                        ],
+                        [
+                            'id' => '3bd80252-19f3-3378-5732-68f8dc51ab7c',
+                        ],
+                        [
+                            'id' => '4ad13a76-3d89-d3bd-9f55-68b6dcb3fdb5',
+                        ],
+                        [
+                            'id' => '66141074-6177-bac3-820e-68f8da63e77e',
+                        ],
+                        [
+                            'id' => '70dcbcf4-cb32-0d58-a5ec-68f8cfbeec7b',
+                        ],
+                        [
+                            'id' => '86613f49-4b10-a6ed-66f0-68f8cb3ae94f',
+                        ],
+                        [
+                            'id' => '91d278cc-f678-61b5-6711-68f8e06219b6',
+                        ],
+                        [
+                            'id' => '91d80e3f-c960-2153-3216-68f8da5f35f1',
+                        ],
+                        [
+                            'id' => 'a23dff51-b2b4-0267-290a-68b6dc168e9d',
+                        ],
+                        [
+                            'id' => 'afb40ce1-5515-cd45-acfc-68f8d8ddaa6c',
+                        ],
+                        [
+                            'id' => 'b5c6f986-d323-d52b-bb78-68f8d0905360',
+                        ],
+                        [
+                            'id' => 'c3012d86-a50f-c04d-e53d-68f8d184737c',
+                        ],
+                        [
+                            'id' => 'd0619fea-b716-525e-270c-68f8d000f5c7',
+                        ],
+                        [
+                            'id' => 'd3e470db-f0ff-641e-bf69-68f8d3408a47',
+                        ],
+                        [
+                            'id' => 'd81c2c7b-db66-9a6c-caf6-68f72615bd1a',
+                        ],
+                        [
+                            'id' => 'df7570ac-4e88-c5e2-eabe-68f8e041cc3a',
+                        ],
+                        [
+                            'id' => 'e5f08bd9-1d27-4cd6-5215-68f8df7e4b5a',
+                        ],
+                    ],
+                ],
+                'opportunities-listview-show-sidebar-widgets' => true,
+                'opportunities-listview-current-pagination-type' => 'pagination',
+                'opportunities-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'opportunities-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'DESC',
+                ],
+                'opportunities-recordview-current-record-pagination' => [
+                    'pagination' => [
+                        'pageSize' => 20,
+                        'current' => 0,
+                        'previous' => -1,
+                        'next' => -1,
+                        'last' => 0,
+                        'total' => 16,
+                        'pageFirst' => 1,
+                        'pageLast' => 16,
+                    ],
+                    'recordIds' => [
+                        [
+                            'id' => '2eecd98b-233d-ca72-9db4-68f8dfea7ed1',
+                        ],
+                        [
+                            'id' => '47670947-424e-5f6d-30b0-68f8dcb07043',
+                        ],
+                        [
+                            'id' => '5f72b6dd-1a64-e0de-9bd8-68f8de46cdc1',
+                        ],
+                        [
+                            'id' => '66a9a2f5-28f8-fde5-1c0c-68f8da606f09',
+                        ],
+                        [
+                            'id' => '7147fad7-cb5b-81e4-0007-68f8cf1d189d',
+                        ],
+                        [
+                            'id' => '8ae0cd81-bab7-bb2b-a3b5-68f8cb6150c3',
+                        ],
+                        [
+                            'id' => '92641840-babd-fb05-adf8-68f8e04129cd',
+                        ],
+                        [
+                            'id' => '9bb90fdf-df16-a04c-ae63-68f8dacb4392',
+                        ],
+                        [
+                            'id' => 'b05a52d8-f2f0-542f-94fc-68f8d81b7437',
+                        ],
+                        [
+                            'id' => 'b65b8f73-693c-8be8-fc7b-68f8d0381283',
+                        ],
+                        [
+                            'id' => 'c39a7a9e-6b8f-103b-0f2c-68f8d19129ed',
+                        ],
+                        [
+                            'id' => 'c6983016-adba-0f1d-fd96-68f727f7791c',
+                        ],
+                        [
+                            'id' => 'd1138ea8-5efa-3b1b-0fdb-68f8d04698c6',
+                        ],
+                        [
+                            'id' => 'd48c01cc-c23c-01aa-e5c7-68f8d340465e',
+                        ],
+                        [
+                            'id' => 'e013ed88-18a3-7326-3395-68f8e03e6b68',
+                        ],
+                        [
+                            'id' => 'e6964330-beec-1e8e-fbb3-68f8df815148',
+                        ],
+                    ],
+                ],
+                'invoices-listview-show-sidebar-widgets' => false,
+                'invoices-listview-current-pagination-type' => 'pagination',
+                'invoices-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'invoices-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'invoices-recordview-current-record-pagination' => [
                     'pagination' => [
                         'pageSize' => 20,
                         'current' => 0,
@@ -207,12 +397,190 @@ return [PHP_INT_MAX, [
                     ],
                     'recordIds' => [
                         [
-                            'id' => 'df9daf20-7563-fb01-648b-68b6dd2b9772',
+                            'id' => '9532e3d6-11a1-44db-0876-68f7b13f9e56',
+                        ],
+                    ],
+                ],
+                'quotes-listview-show-sidebar-widgets' => false,
+                'quotes-listview-current-pagination-type' => 'pagination',
+                'quotes-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'quotes-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'documents-listview-show-sidebar-widgets' => false,
+                'documents-listview-current-pagination-type' => 'pagination',
+                'documents-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'documents-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'leads-listview-show-sidebar-widgets' => true,
+                'leads-listview-current-pagination-type' => 'pagination',
+                'leads-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'leads-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'opportunities-recordview-show-sidebar-widgets' => true,
+                'tasks-listview-show-sidebar-widgets' => false,
+                'tasks-listview-current-pagination-type' => 'pagination',
+                'tasks-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'tasks-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'cases-recordview-current-record-pagination' => [
+                    'pagination' => [
+                        'pageSize' => 20,
+                        'current' => 0,
+                        'previous' => -1,
+                        'next' => -1,
+                        'last' => -20,
+                        'total' => 0,
+                        'pageFirst' => 0,
+                        'pageLast' => 0,
+                    ],
+                    'recordIds' => [],
+                ],
+                'cases-listview-show-sidebar-widgets' => false,
+                'cases-listview-current-pagination-type' => 'pagination',
+                'cases-listview-current-filters' => [
+                    'default' => [
+                        'key' => 'default',
+                        'module' => 'saved-search',
+                        'attributes' => [
+                            'contents' => '',
+                        ],
+                        'criteria' => [
+                            'name' => 'default',
+                            'filters' => [],
+                        ],
+                    ],
+                ],
+                'cases-listview-current-sort' => [
+                    'orderBy' => '',
+                    'sortOrder' => 'NONE',
+                ],
+                'cases-recordview-show-sidebar-widgets' => false,
+                'administration-recordview-current-record-pagination' => [
+                    'pagination' => [
+                        'pageSize' => 20,
+                        'current' => 0,
+                        'previous' => -1,
+                        'next' => -1,
+                        'last' => 0,
+                        'total' => 18,
+                        'pageFirst' => 1,
+                        'pageLast' => 18,
+                    ],
+                    'recordIds' => [
+                        [
+                            'id' => '2e5bbf23-3a82-4d21-badb-68f8df9e5f0e',
+                        ],
+                        [
+                            'id' => '375b0ada-5155-81ac-2a4e-68b6dc760d9c',
+                        ],
+                        [
+                            'id' => '3bd80252-19f3-3378-5732-68f8dc51ab7c',
+                        ],
+                        [
+                            'id' => '4ad13a76-3d89-d3bd-9f55-68b6dcb3fdb5',
+                        ],
+                        [
+                            'id' => '66141074-6177-bac3-820e-68f8da63e77e',
+                        ],
+                        [
+                            'id' => '70dcbcf4-cb32-0d58-a5ec-68f8cfbeec7b',
+                        ],
+                        [
+                            'id' => '86613f49-4b10-a6ed-66f0-68f8cb3ae94f',
+                        ],
+                        [
+                            'id' => '91d278cc-f678-61b5-6711-68f8e06219b6',
+                        ],
+                        [
+                            'id' => '91d80e3f-c960-2153-3216-68f8da5f35f1',
+                        ],
+                        [
+                            'id' => 'a23dff51-b2b4-0267-290a-68b6dc168e9d',
+                        ],
+                        [
+                            'id' => 'afb40ce1-5515-cd45-acfc-68f8d8ddaa6c',
+                        ],
+                        [
+                            'id' => 'b5c6f986-d323-d52b-bb78-68f8d0905360',
+                        ],
+                        [
+                            'id' => 'c3012d86-a50f-c04d-e53d-68f8d184737c',
+                        ],
+                        [
+                            'id' => 'd0619fea-b716-525e-270c-68f8d000f5c7',
+                        ],
+                        [
+                            'id' => 'd3e470db-f0ff-641e-bf69-68f8d3408a47',
+                        ],
+                        [
+                            'id' => 'd81c2c7b-db66-9a6c-caf6-68f72615bd1a',
+                        ],
+                        [
+                            'id' => 'df7570ac-4e88-c5e2-eabe-68f8e041cc3a',
+                        ],
+                        [
+                            'id' => 'e5f08bd9-1d27-4cd6-5215-68f8df7e4b5a',
                         ],
                     ],
                 ],
             ],
-            'snooze_alert_timer' => 600,
+            'snooze_alert_timer' => '600',
             'language' => 'en_us',
             'is_two_factor_enabled' => false,
         ],

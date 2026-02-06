@@ -227,7 +227,7 @@ return [PHP_INT_MAX, [
         'id' => 'system_name',
         '_id' => 'system_name',
         'items' => [],
-        'value' => 'SuiteCRM',
+        'value' => 'TableReadyCRM',
     ],
     'subpanel_pagination_type' => [
         'id' => 'subpanel_pagination_type',

@@ -1,0 +1,71 @@
+##################################
+# OS / Editor junk
+##################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+##################################
+# Composer / Node
+##################################
+/vendor/
+/node_modules/
+composer.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+##################################
+# Environment / Secrets
+##################################
+.env
+.env.*
+config_override.php
+public/legacy/config_override.php
+
+##################################
+# Logs
+##################################
+*.log
+/var/log/
+/public/legacy/logs/
+
+##################################
+# Cache (MAIN REQUIREMENT)
+##################################
+/cache/
+/var/cache/
+/public/legacy/cache/
+/public/legacy/include/javascript/compiled/
+/public/legacy/include/javascript/jquery/
+/public/legacy/include/javascript/sugar_grp*
+/public/legacy/include/javascript/jsclass_base.js
+
+##################################
+# Uploads & Generated Files
+# (usually environment-specific)
+##################################
+/public/legacy/upload/
+/public/legacy/custom/modulebuilder/
+/public/legacy/custom/Extension/application/Ext/Language/
+/public/legacy/custom/Extension/modules/**/Ext/Vardefs/
+/public/legacy/custom/Extension/modules/**/Ext/Layoutdefs/
+/public/legacy/custom/Extension/modules/**/Ext/Language/
+
+##################################
+# Tests / Coverage
+##################################
+/coverage/
+/phpunit.xml
+.phpunit.result.cache
+
+##################################
+# Symfony / SuiteCRM 8 internals
+##################################
+/var/
+/public/build/
