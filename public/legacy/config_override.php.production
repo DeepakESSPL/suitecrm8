@@ -11,10 +11,10 @@ if (!defined('sugarEntry') || !sugarEntry) {
 }
 
 // Production Database Configuration
-$sugar_config['dbconfig']['db_host_name'] = 'localhost';
-$sugar_config['dbconfig']['db_user_name'] = 'crm';
-$sugar_config['dbconfig']['db_password'] = 'Crm@2025$!';
-$sugar_config['dbconfig']['db_name'] = 'crm_suitecrm';
+$sugar_config['dbconfig']['db_host_name'] = '127.0.0.1';
+$sugar_config['dbconfig']['db_user_name'] = 'trcrm';
+$sugar_config['dbconfig']['db_password'] = 'TRcrm@2025$£!';
+$sugar_config['dbconfig']['db_name'] = 'trcrm';
 $sugar_config['dbconfig']['db_type'] = 'mysql';
 $sugar_config['dbconfig']['db_port'] = '';
 $sugar_config['dbconfig']['db_manager'] = 'MysqliManager';

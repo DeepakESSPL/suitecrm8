@@ -16,11 +16,11 @@ $sugar_config['dbconfig']['db_user_name'] = 'crm';
 $sugar_config['dbconfig']['db_password'] = 'Crm@2025$!';
 $sugar_config['dbconfig']['db_name'] = 'crm_suitecrm';
 $sugar_config['dbconfig']['db_type'] = 'mysql';
-$sugar_config['dbconfig']['db_port'] = '';
+$sugar_config['dbconfig']['db_port'] = '3306';
 $sugar_config['dbconfig']['db_manager'] = 'MysqliManager';
 
 // Staging Site URL
-$sugar_config['site_url'] = 'https://staging.your-domain.com';
+$sugar_config['site_url'] = 'https://crm.esdev.in/suitecrm8/public/';
 
 // Staging-specific settings (can enable more logging)
 $sugar_config['developer_mode'] = false;
